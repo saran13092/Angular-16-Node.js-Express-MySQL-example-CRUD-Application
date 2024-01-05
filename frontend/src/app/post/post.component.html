@@ -1,0 +1,25 @@
+
+
+<form [formGroup]="FormOne">
+
+
+    <div>
+        <label> Brand</label>
+        <input type="text" name="brand" formControlName="brand">
+    </div>
+    <div>
+        <label> Price</label>
+        <input type="number" name="price" formControlName="price">
+    </div>
+
+    <div>
+        <label> Color</label>
+        <input type="text" name="color" formControlName="color">
+    </div>
+
+    <div>
+        <button (click)="postData()">submit</button>
+    </div>
+
+
+<button (click)="back()">Back</button>

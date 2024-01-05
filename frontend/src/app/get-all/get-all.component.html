@@ -1,0 +1,27 @@
+<button (click)="post()">post</button>
+
+<table>
+  <thead>
+    <tr>
+      <th>S.No</th>
+      <th>Brand</th>
+      <th>Price</th>
+      <th>Color</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let c of car;let i=index">
+      <td>{{i+1}}</td>
+      <td>{{c.brand}}</td>
+      <td>{{c.price}}</td>
+      <td>{{c.color}}</td>
+      <td>
+        <button (click)="getById(c.id)">get</button>
+        <button (click)="update(c.id)">update</button>
+        <button (click)="deleteid(c.id)">delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
